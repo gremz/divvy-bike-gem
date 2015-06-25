@@ -1,5 +1,5 @@
 # divvy-bike-gem
-Chicago Divvy Bike Sharing System API ruby gem
+Wrapper for the Chicago Divvy Bike Sharing System API.
 
 ## Installation
 
