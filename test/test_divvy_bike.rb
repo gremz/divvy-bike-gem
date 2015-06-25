@@ -12,11 +12,11 @@ class DivvyBikeTest < Minitest::Test
       DivvyBike.get(:id => 2)[0]["id"]
   end
 
-  def test_have_available_bikes
-    assert DivvyBike.have_available_bikes[0]["availableBikes"] > 0
+  def test_has_available_bikes
+    assert DivvyBike.has_available_bikes[0]["availableBikes"] > 0
   end
 
-  def test_have_available_docks
-    assert DivvyBike.have_available_docks[0]["availableDocks"] > 0
+  def test_has_available_docks
+    assert DivvyBike.has_available_docks[0]["availableDocks"] > 0
   end
 end

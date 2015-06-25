@@ -36,12 +36,12 @@ class DivvyBike
 		return filtered_stations
 	end
 
-	def self.have_available_bikes
+	def self.has_available_bikes
 		stations = get_data
 		stations.select { |station| station["availableBikes"] > 0 }
 	end
 
-	def self.have_available_docks
+	def self.has_available_docks
 		stations = get_data
 		stations.select { |station| station["availableDocks"] > 0 }
 	end
