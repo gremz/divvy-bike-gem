@@ -39,20 +39,21 @@ You may pass the following filter criteria
 ```ruby
 DivvyBike.get(:id => 2)
 DivvyBike.get(:id => 2, :available_docks => 19)
+DivvyBike.get({ :id => 2, :available_docks => 19, :status_key => 1 })
 ```
 
-### Get available bikes
+### Get stations with available bikes
 Returns all stations with available bikes
 
 ```ruby
-DivvyBike.have_available_bikes
+DivvyBike.has_available_bikes
 ```
 
-### Get available docks
+### Get stations with available docks
 Returns all stations with available docks
 
 ```ruby
-DivvyBike.have_available_docks
+DivvyBike.has_available_docks
 ```
 
 ## Questions/Comments
