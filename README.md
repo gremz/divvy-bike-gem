@@ -28,3 +28,33 @@ gem install divvy_bike
 ```ruby
 DivvyBike.all
 ```
+
+### Get filtered results
+You may pass the following filter criteria
+
+:id, :station_name, :available_docks, :total_docks, :latitude, :longitude, :status_value, :status_key, 
+:available_bikes, :st_address_1, :st_address_2, :city, :postal_code, :location, :altitude, :test_station, 
+:last_communication_time, :land_mark
+
+```ruby
+DivvyBike.get(:id => 2)
+DivvyBike.get(:id => 2, :available_docks => 19)
+```
+
+### Get available bikes
+Returns all stations with available bikes
+
+```ruby
+DivvyBike.have_available_bikes
+```
+
+### Get available docks
+Returns all stations with available docks
+
+```ruby
+DivvyBike.have_available_docks
+```
+
+## Questions/Comments
+
+Feel free to contact me with any questions/comments or pull requests
